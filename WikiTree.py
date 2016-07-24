@@ -37,6 +37,11 @@ class WikiTree:
     def getLevels(self):
         print("Placeholder")
 
+    def getNodeList(self,level):
+        currentlevel = 0
+        done = False
+        while currentlevel <> 0 or done:
+
     def printPath(self,url):
         print("Placeholder")
 
