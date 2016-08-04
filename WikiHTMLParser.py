@@ -37,7 +37,8 @@ class WikiParser(HTMLParser):
             for name,value in attrs:
                 if value == "firstHeading":
                     self._handlingName = True
-                    
+    
+    #Set the title when the flag is true
     def handle_data(self,data):
         if self._handlingName:
             self._wikititle = data
